@@ -1,0 +1,72 @@
+// Color Variables
+$color-primary: #48b774;
+$color-secondary: #ff8345;
+$color-tertiary: #ffca45;
+
+$color-primary-light: #edf8f4;
+$color-secondary-light: #fff0e9;
+$color-tertiary-light: #fff6dd;
+
+$color-dark: #2e2e2e;
+$color-grey: #f6f8f7;
+$color-grey-darker: #6f6f6f;
+$color-light: #fcfdfd;
+
+// Breaking Points
+$bp-large: 78.15em; // 1250px
+$bp-medium: 61.25em; // 980px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	line-height: 1.6;
+	color: $color-grey-darker;
+	background-color: $color-light;
+}
+
+h1 {
+	font-size: 7rem;
+	font-weight: 700;
+	line-height: 1.35;
+	color: $color-dark;
+}
+
+h4 {
+	font-size: 2.4rem;
+	font-weight: 500;
+}
+
+p {
+	font-size: 1.7rem;
+	font-weight: 500;
+}
+
+img {
+	transition: filter 0.5s;
+}
+
+svg {
+	height: 2.4rem;
+	width: 2.4rem;
+	fill: $color-primary;
+	margin-right: 0.7rem;
+	transform: translateY(-1px);
+}

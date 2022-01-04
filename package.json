@@ -1,0 +1,18 @@
+{
+	"name": "digital-agency-landing-page",
+	"version": "1.0.0",
+	"description": "A simple landing page for a digital agency",
+	"scripts": {
+		"start": "parcel index.html",
+		"build": "parcel build index.html --dist-dir ./dist"
+	},
+	"author": "Angel Adrimsim",
+	"license": "ISC",
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.0.1",
+		"parcel": "^2.0.1"
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "^5.15.4"
+	}
+}
