@@ -854,7 +854,284 @@ body {
 
 /* RESPONSIVE DESIGN */
 
-@media only screen and (max-width: 600px) {
+/* MOBILE */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	/* ----- GENERAL ELEMENTS ----- */
+	.section {
+		padding: 3rem;
+	}
+
+	.section__title {
+		margin-bottom: 1rem;
+	}
+
+	.section__description {
+		font-size: 1.5rem;
+	}
+
+	.section__bottom-row {
+		flex-direction: column;
+	}
+
+	.section__header {
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.section__subtext {
+		font-size: 1.5rem;
+		width: 100%;
+	}
+
+	.btn--text {
+		font-size: 1.5rem;
+		margin-top: 1rem;
+	}
+
+	/* ----- NAVIGATION ----- */
+
+	.nav__links {
+		flex-direction: column;
+		margin-top: 15rem;
+		background-color: var(--color-light);
+		padding: 2rem;
+		border-radius: 3rem;
+
+		display: none;
+	}
+
+	.nav__item {
+		margin-left: 0;
+	}
+
+	.nav__link {
+		font-size: 1.5rem;
+	}
+
+	.nav__link:hover {
+		color: var(--color-secondary);
+	}
+
+	.nav__link:hover:after {
+		width: 0;
+	}
+
+	.nav__link--btn {
+		font-size: 1.5rem;
+		padding: 1.5rem 2rem;
+		margin: 1rem 0 0;
+	}
+
+	/* ----- HEADER ----- */
+	.header {
+		padding: 5rem;
+		height: 100vh;
+	}
+
+	.header__title {
+		flex-direction: column;
+		width: 100%;
+		padding: 0;
+	}
+
+	.header__description {
+		margin: 5rem 0 1.25rem;
+		width: 100%;
+	}
+
+	.header__description h1 {
+		font-size: 3rem;
+	}
+
+	.header__description p {
+		font-size: 1.6rem;
+		margin: 2rem 0 3rem;
+	}
+
+	.btn--start {
+		font-size: 1.5rem;
+		padding: 1.5rem 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.btn--watch {
+		font-size: 1.5rem;
+		padding: 1.5rem 3rem;
+	}
+
+	.icon__send,
+	.icon__inbox,
+	.icon__team,
+	.header__team {
+		display: none;
+	}
+
+	.header__img {
+		transform: none;
+		width: 150%;
+	}
+
+	.header__brands {
+		bottom: 0;
+		padding: 2rem;
+		text-align: center;
+	}
+
+	.header__brand-logos {
+		height: 3rem;
+		margin: 1rem;
+	}
+
+	/* ----- SERVICES ----- */
+
+	.services {
+		flex-direction: column;
+	}
+
+	.services__service {
+		width: 100%;
+		margin-top: 2rem;
+		text-align: center;
+		padding: 2rem;
+	}
+
+	.services__service p {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.icon--chart,
+	.icon--sales,
+	.icon--expert {
+		margin: 0 auto;
+	}
+
+	.services__header {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	/* ----- PORTFOLIO ----- */
+
+	.btn--explore {
+		font-size: 1.5rem;
+		padding: 1.5rem 3rem;
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+	.portfolio {
+		flex-direction: column;
+	}
+
+	.portfolio__bottom {
+		margin-left: 0;
+	}
+
+	.portfolio__project {
+		margin-bottom: 5rem;
+	}
+
+	.proj-1,
+	.proj-2,
+	.proj-3,
+	.proj-4 {
+		height: 30rem;
+	}
+
+	.portfolio__header {
+		font-size: 2rem;
+	}
+
+	.portfolio__project p {
+		font-size: 1.5rem;
+	}
+
+	/* ----- TESTIMONIALS ----- */
+
+	#section--3 h3 {
+		margin-right: 0;
+	}
+
+	.testimonial-arr {
+		padding: 0;
+	}
+
+	.slider {
+		display: block;
+	}
+
+	.slide {
+		width: 100%;
+		font-size: 1.5rem;
+		padding: 3rem;
+	}
+
+	/* ----- SUBSCRIBE ----- */
+
+	.section--subscribe h3 {
+		font-size: 3rem;
+		margin-bottom: 2rem;
+	}
+
+	.section--subscribe p {
+		font-size: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.subscribe__form input {
+		font-size: 1.5rem;
+		padding: 1.5rem;
+		width: 100%;
+	}
+
+	.btn--subscribe {
+		font-size: 1.5rem;
+		padding: 1rem 1.5rem;
+		margin-left: -11rem;
+		height: 4rem;
+	}
+
+	/* ----- FOOTER ----- */
+
+	.footer__content {
+		flex-direction: column;
+		margin-left: 0;
+		font-size: 1.5rem;
+		padding: 5rem;
+	}
+
+	.footer__site-info {
+		width: 100%;
+		margin: 0 0 3rem;
+	}
+
+	.footer__logo h3 {
+		font-size: 2rem;
+	}
+
+	.footer__nav-title {
+		font-size: 1.8rem;
+		margin: 2rem 0 1rem;
+	}
+
+	.footer__nav-get-in-touch {
+		width: 100%;
+	}
+
+	.footer__copyright {
+		flex-direction: column;
+		padding: 2rem 5rem;
+		font-size: 1.4rem;
+	}
+
+	.footer__socmed i {
+		padding: 1rem 1.7rem 1rem 0;
+	}
+}
+
+/* TABLETS */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
 	/* ----- GENERAL ELEMENTS ----- */
 	.section {
 		padding: 5rem;
@@ -967,7 +1244,7 @@ body {
 
 	.header__img {
 		transform: none;
-		width: 100%;
+		width: 115%;
 	}
 
 	.header__brands {
@@ -1125,7 +1402,8 @@ body {
 	}
 }
 
-@media only screen and (max-width: 980px) {
+/* SMALL SCREENS */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 	/* ----- GENERAL ELEMENTS ----- */
 	.section {
 		padding: 5rem;
@@ -1153,7 +1431,7 @@ body {
 	}
 
 	.btn--text {
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 		margin-top: 1rem;
 	}
 
@@ -1169,17 +1447,17 @@ body {
 	}
 
 	.nav__item {
-		margin-left: 5rem;
+		margin-left: 2rem;
 	}
 
 	.nav__link {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 	}
 
 	.nav__link--btn {
-		font-size: 1.5rem;
-		padding: 1.5rem 2rem;
-		margin-left: 6rem;
+		font-size: 1.25rem;
+		padding: 1.25rem 1.75rem;
+		margin-left: 3rem;
 	}
 
 	/* ----- HEADER ----- */
@@ -1208,27 +1486,26 @@ body {
 	}
 
 	.btn--start {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		padding: 1.5rem 3rem;
 		margin-right: 1rem;
 	}
 
 	.btn--watch {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		padding: 1.5rem 3rem;
 	}
 
 	.header__graphics .icon__send {
 		top: 5rem;
-		left: 4rem;
-		transform: rotate(-20deg);
-		width: 7rem;
+		left: 6rem;
+		width: 6rem;
 	}
 
 	.header__graphics .icon__inbox {
-		top: 35rem;
+		top: 40rem;
 		left: -1rem;
-		width: 7rem;
+		width: 6rem;
 	}
 
 	.icon__team,
@@ -1238,16 +1515,16 @@ body {
 
 	.header__img {
 		transform: translateY(5rem);
-		width: 110%;
+		width: 140%;
 	}
 
 	.header__brands {
-		bottom: 25rem;
-		padding: 3.5rem 8rem;
+		bottom: 0;
+		padding: 1.5rem 5rem;
 	}
 
 	.header__brand-logos {
-		height: 4rem;
+		height: 3rem;
 		margin: 0 1.5rem;
 	}
 
@@ -1257,11 +1534,11 @@ body {
 		width: 100%;
 		margin-top: 0;
 		text-align: center;
-		padding: 3rem;
+		padding: 2rem;
 	}
 
 	.services__service p {
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 		margin-bottom: 1rem;
 	}
 
@@ -1272,7 +1549,7 @@ body {
 	}
 
 	.services__header {
-		font-size: 2rem;
+		font-size: 1.7rem;
 		margin-bottom: 1rem;
 	}
 
@@ -1280,8 +1557,8 @@ body {
 
 	.btn--explore {
 		font-size: 1.5rem;
-		padding: 2rem 3rem;
-		width: 30%;
+		padding: 1.3rem 3rem;
+		width: 40%;
 	}
 
 	.portfolio__bottom {
@@ -1310,11 +1587,12 @@ body {
 	/* ----- TESTIMONIALS ----- */
 
 	#section--3 h3 {
-		width: 90%;
+		width: 100%;
+		margin-right: 2rem;
 	}
 
 	.testimonial-arr {
-		padding: 1rem;
+		padding: 1.5rem;
 	}
 
 	.slider {
@@ -1324,6 +1602,7 @@ body {
 	.slide {
 		width: 50%;
 		font-size: 1.5rem;
+		padding: 3rem;
 	}
 
 	/* ----- SUBSCRIBE ----- */
@@ -1390,10 +1669,11 @@ body {
 	}
 }
 
-@media only screen and (max-width: 1250px) {
+/* LARGE SCREENS */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
 	/* ----- GENERAL ELEMENTS ----- */
 	.section {
-		padding: 5rem 10rem;
+		padding: 5rem 7rem;
 	}
 
 	.section__bottom-row {
@@ -1402,30 +1682,48 @@ body {
 
 	/* ----- NAVIGATION ----- */
 
+	.nav__item {
+		margin-left: 1rem;
+	}
+
 	.nav__link--btn {
-		margin-left: 9rem;
+		padding: 1.25rem 1.75rem;
+		margin-left: 3rem;
 	}
 
 	/* ----- HEADER ----- */
 	.header {
-		padding: 5rem 10rem;
+		padding: 5rem 7rem;
 	}
 
 	.header__description {
 		margin: 5rem 0 1.25rem;
-		width: 70%;
+		width: 60%;
+	}
+
+	.header__description h1 {
+		font-size: 4.5rem;
+	}
+
+	.btn--start {
+		padding: 1.5rem 3rem;
+		margin-right: 1rem;
+	}
+
+	.btn--watch {
+		padding: 1.5rem 3rem;
 	}
 
 	.header__graphics .icon__inbox {
-		left: -3rem;
+		left: 1rem;
 	}
 
 	.header__img {
-		width: 130%;
+		width: 120%;
 	}
 
 	.header__brands {
-		padding: 3.5rem 8rem;
+		padding: 2rem 5rem;
 	}
 
 	.header__brand-logos {
@@ -1450,6 +1748,11 @@ body {
 
 	/* ----- TESTIMONIALS ----- */
 
+	#section--3 h3 {
+		width: 100%;
+		margin-right: 2rem;
+	}
+
 	.testimonial-arr {
 		padding: 3rem;
 	}
@@ -1461,7 +1764,148 @@ body {
 	/* ----- FOOTER ----- */
 
 	.footer__content {
-		padding: 10rem;
+		padding: 7rem;
+	}
+
+	.footer__site-info {
+		margin-right: 1rem;
+	}
+
+	.footer__nav--container {
+		margin-right: 1.5rem;
+	}
+
+	.footer__copyright {
+		padding: 2rem 10rem;
+	}
+}
+
+/* EXTRA LARGE SCREENS */
+@media only screen and (min-width: 1201px) and (max-width: 1280px) {
+	/* ----- GENERAL ELEMENTS ----- */
+	.section {
+		padding: 5rem 15rem;
+	}
+
+	.section__bottom-row {
+		gap: 10%;
+	}
+
+	/* ----- NAVIGATION ----- */
+
+	.nav__item {
+		margin-left: 1rem;
+	}
+
+	.nav__link--btn {
+		padding: 1.25rem 1.75rem;
+		margin-left: 3rem;
+	}
+
+	/* ----- HEADER ----- */
+	.header {
+		padding: 3rem 15rem;
+	}
+
+	.header__description {
+		margin: 0 5rem 1rem 0;
+		width: 60%;
+	}
+
+	.header__description h1 {
+		font-size: 3rem;
+	}
+
+	.header__description p {
+		margin-bottom: 2rem;
+	}
+
+	.btn--start {
+		padding: 1.5rem 3rem;
+		margin-right: 1rem;
+	}
+
+	.btn--watch {
+		padding: 1.5rem 3rem;
+	}
+
+	.header__graphics .icon__inbox {
+		left: 1rem;
+	}
+
+	.header__graphics .icon__send {
+		top: 0rem;
+		left: 6rem;
+		width: 6rem;
+	}
+
+	.header__graphics .icon__inbox {
+		top: 25rem;
+		left: 2rem;
+		width: 6rem;
+	}
+
+	.icon__team,
+	.header__team {
+		display: none;
+	}
+
+	.header__img {
+		width: 100%;
+	}
+
+	.header__brands {
+		padding: 2rem 5rem;
+		bottom: -5rem;
+	}
+
+	.header__brand-logos {
+		margin: 0 3rem;
+	}
+
+	/* ----- SERVICES ----- */
+
+	.services__service {
+		padding: 4rem;
+	}
+
+	/* ----- PORTFOLIO ----- */
+
+	.portfolio__bottom {
+		margin-left: 5rem;
+	}
+
+	.portfolio__project p {
+		font-size: 1.5rem;
+	}
+
+	/* ----- TESTIMONIALS ----- */
+
+	#section--3 h3 {
+		width: 100%;
+		margin-right: 2rem;
+	}
+
+	.testimonial-arr {
+		padding: 3rem;
+	}
+
+	.slide {
+		width: 50%;
+	}
+
+	/* ----- FOOTER ----- */
+
+	.footer__content {
+		padding: 7rem;
+	}
+
+	.footer__site-info {
+		margin-right: 1rem;
+	}
+
+	.footer__nav--container {
+		margin-right: 1.5rem;
 	}
 
 	.footer__copyright {
