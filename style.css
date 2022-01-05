@@ -967,8 +967,9 @@ body {
 	}
 
 	.header__img {
-		transform: none;
-		width: 150%;
+		/* transform: none;
+		width: 150%; */
+		display: none;
 	}
 
 	.header__brands {
