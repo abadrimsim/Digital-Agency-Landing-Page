@@ -121,28 +121,28 @@ btnExplore.addEventListener('click', function () {
 });
 
 // Lazy Loading for Portfolio Images
-const loadImg = function (entries, observer) {
-	const [entry] = entries;
-	if (!entry.isIntersecting) return;
+// const loadImg = function (entries, observer) {
+// 	const [entry] = entries;
+// 	if (!entry.isIntersecting) return;
 
-	// Replace src with data-src
-	entry.target.src = entry.target.dataset.src;
+// 	// Replace src with data-src
+// 	entry.target.src = entry.target.dataset.src;
 
-	// Remove class once the image has been fully loaded
-	entry.target.addEventListener('load', function () {
-		entry.target.classList.remove('lazy-img');
-	});
+// 	// Remove class once the image has been fully loaded
+// 	entry.target.addEventListener('load', function () {
+// 		entry.target.classList.remove('lazy-img');
+// 	});
 
-	observer.unobserve(entry.target);
-};
+// 	observer.unobserve(entry.target);
+// };
 
-const imgObserver = new IntersectionObserver(loadImg, {
-	root: null,
-	threshold: 0,
-	rootMargin: '200px',
-});
+// const imgObserver = new IntersectionObserver(loadImg, {
+// 	root: null,
+// 	threshold: 0,
+// 	rootMargin: '200px',
+// });
 
-imgTargets.forEach((img) => imgObserver.observe(img));
+// imgTargets.forEach((img) => imgObserver.observe(img));
 
 // Testimonial Slider Functionality Using SllickJS
 $('.slider').slick({
