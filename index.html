@@ -6,15 +6,39 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="shortcut icon" type="image/png" href="src/img/site-logo.png" />
 
+		<!-- SlickJS -->
 		<link
-			href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap"
 			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
 		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+		/>
+
+		<!-- Font Awesome Icons -->
 		<link
 			rel="stylesheet"
 			href="node_modules/@fortawesome/fontawesome-free/css/all.css"
 		/>
+
 		<link rel="stylesheet" href="main.css" />
+
+		<!-- jQuery -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+
+		<!-- SlickJS -->
+		<script
+			type="text/javascript"
+			src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"
+		></script>
 		<script type="module" defer src="src/js/script.js"></script>
 
 		<title>Artbuzz | Smart Ideas For Your Brand</title>
@@ -22,7 +46,7 @@
 
 	<body>
 		<header class="header">
-			<nav class="nav">
+			<nav class="nav sticky">
 				<div class="nav__site-logo">
 					<img
 						src="src/img/site-logo.png"
@@ -58,11 +82,6 @@
 						</button>
 					</li>
 				</ul>
-
-				<!-- <button class="nav__link--btn btn--show-modal" href="#">
-					<i class="far fa-address-book"></i>
-					Contact Us
-				</button> -->
 			</nav>
 
 			<div class="hero">
@@ -85,51 +104,20 @@
 					<div class="header__graphics">
 						<img
 							src="src/img/hero-female.png"
-							class="header__img"
+							class="header__img grow"
 							alt="Artbuzz digital agency model"
 						/>
 
 						<img
 							src="src/img/hero-send.png"
-							class="icon__send"
+							class="icon__send grow__send"
 							alt="Send icon"
 						/>
 						<img
 							src="src/img/hero-mail.png"
-							class="icon__inbox"
+							class="icon__inbox grow__inbox"
 							alt="Inbox icon"
 						/>
-						<img
-							src="src/img/hero-group.png"
-							class="icon__team"
-							alt="Group icon"
-						/>
-
-						<div class="header__team">
-							<p>Our Creative Team</p>
-							<div class="header__team-container">
-								<img
-									src="src/img/hero-u1.jpg"
-									class="header__team-member member--1"
-									alt="Team member 1"
-								/>
-								<img
-									src="src/img/hero-u2.jpg"
-									class="header__team-member member--2"
-									alt="Team member 2"
-								/>
-								<img
-									src="src/img/hero-u3.jpg"
-									class="header__team-member member--3"
-									alt="Team member 3"
-								/>
-								<img
-									src="src/img/hero-u4.jpg"
-									class="header__team-member member--4"
-									alt="Other members"
-								/>
-							</div>
-						</div>
 					</div>
 				</div>
 
@@ -251,10 +239,9 @@
 			<div class="portfolio">
 				<div class="portfolio__top">
 					<div class="portfolio__project">
-						<!-- src="src/img/w-task-management-lazy.png" -->
 						<div class="portfolio__img">
 							<img
-								src="src/img/w-task-management.png"
+								src="src/img/w-task-management-lazy.png"
 								data-src="src/img/w-task-management.png"
 								alt="Task Management App"
 								class="proj-1 lazy-img"
@@ -269,10 +256,9 @@
 					</div>
 
 					<div class="portfolio__project">
-						<!-- src="src/img/w-food-delivery-lazy.png" -->
 						<div class="portfolio__img">
 							<img
-								src="src/img/w-food-delivery.png"
+								src="src/img/w-food-delivery-lazy.png"
 								data-src="src/img/w-food-delivery.png"
 								alt="Food Delivery App"
 								class="proj-2 lazy-img"
@@ -289,10 +275,9 @@
 
 				<div class="portfolio__bottom">
 					<div class="portfolio__project">
-						<!-- src="src/img/w-furniture-landing-lazy.png" -->
 						<div class="portfolio__img">
 							<img
-								src="src/img/w-furniture-landing.png"
+								src="src/img/w-furniture-landing-lazy.png"
 								data-src="src/img/w-furniture-landing.png"
 								alt="Furniture Landing Page"
 								class="proj-3 lazy-img"
@@ -307,10 +292,9 @@
 					</div>
 
 					<div class="portfolio__project">
-						<!-- src="src/img/w-cleaning-service-lazy.png" -->
 						<div class="portfolio__img">
 							<img
-								src="src/img/w-cleaning-service.png"
+								src="src/img/w-cleaning-service-lazy.png"
 								data-src="src/img/w-cleaning-service.png"
 								alt="Cleaning Service App"
 								class="proj-4 lazy-img"
@@ -351,7 +335,7 @@
 						<i class="fas fa-quote-left quote-icon"></i>
 						<p>
 							I continue to entrust my company with Artbuzz and the growth is
-							definitely exponential!
+							exponential!
 						</p>
 						<div class="testimonial__author">
 							<img src="src/img/user-1.jpg" alt="" class="testimonial__photo" />
@@ -389,135 +373,77 @@
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
+							<i class="far fa-star"></i>
 						</span>
-					</div>
-				</div>
-
-				<!-- <div class="slide slide--2">
-					<div class="testimonial">
-						<i class="fas fa-quote-left"></i>
-						<p>
-							Working with Artbuzz is amazing! They are great to communicate
-							with.
-						</p>
-						<div class="testimonial__author">
-							<img src="src/img/user-2.jpg" alt="" class="testimonial__photo" />
-							<h6 class="testimonial__name">Jenny Wilson</h6>
-							<p class="testimonial__position">Consultant</p>
-							<div class="testimonial__rating">
-								<img
-									src="src/img/star-solid.svg"
-									alt="Star icon"
-									class="rating"
-								/>
-								<img
-									src="src/img/star-solid.svg"
-									alt="Star icon"
-									class="rating"
-								/>
-								<img
-									src="src/img/star-solid.svg"
-									alt="Star icon"
-									class="rating"
-								/>
-							</div>
-						</div>
 					</div>
 				</div>
 
 				<div class="slide slide--3">
 					<div class="testimonial">
-						<i class="fas fa-quote-left"></i>
+						<i class="fas fa-quote-left quote-icon"></i>
 						<p>
-							I am at ease when I work with them. Definitely a game changer! Our
-							sales are up this year!
+							I am at ease when I work with them. Definitely a game changer!
 						</p>
 						<div class="testimonial__author">
 							<img src="src/img/user-3.jpg" alt="" class="testimonial__photo" />
-							<h6 class="testimonial__name">Diane Smith</h6>
-							<p class="testimonial__position">Sales Manager</p>
-							<div class="testimonial__rating">
-								<img
-									src="src/img/star-solid.svg"
-									alt="Star icon"
-									class="rating"
-								/>
-								<img
-									src="src/img/star-solid.svg"
-									alt="Star icon"
-									class="rating"
-								/>
-								<img
-									src="src/img/star-solid.svg"
-									alt="Star icon"
-									class="rating"
-								/>
+							<div class="author-info">
+								<p class="testimonial__name">Brian Smith</p>
+								<p class="testimonial__position">Sales Manager</p>
 							</div>
 						</div>
+						<span class="testimonial__rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</span>
 					</div>
 				</div>
 
 				<div class="slide slide--4">
 					<div class="testimonial">
-						<i class="fas fa-quote-left"></i>
+						<i class="fas fa-quote-left quote-icon"></i>
 						<p>
-							Working with them is working with a top-notch company that is
-							committed to your success.
+							Working with them feels like working with a top-notch company.
 						</p>
 						<div class="testimonial__author">
 							<img src="src/img/user-4.jpg" alt="" class="testimonial__photo" />
-							<h6 class="testimonial__name">Samantha Rice</h6>
-							<p class="testimonial__position">Partner Manager</p>
-							<div class="testimonial__rating">
-								<img
-									src="src/img/star-solid.svg"
-									alt="Star icon"
-									class="rating"
-								/>
-								<img
-									src="src/img/star-solid.svg"
-									alt="Star icon"
-									class="rating"
-								/>
-								<img
-									src="src/img/star-solid.svg"
-									alt="Star icon"
-									class="rating"
-								/>
+							<div class="author-info">
+								<p class="testimonial__name">Samantha Rice</p>
+								<p class="testimonial__position">Partner Manager</p>
 							</div>
 						</div>
+						<span class="testimonial__rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</span>
 					</div>
 				</div>
 
 				<div class="slide slide--5">
 					<div class="testimonial">
-						<i class="fas fa-quote-left"></i>
+						<i class="fas fa-quote-left quote-icon"></i>
 						<p>They're far more strategic than other firms I've worked with!</p>
 						<div class="testimonial__author">
 							<img src="src/img/user-5.jpg" alt="" class="testimonial__photo" />
-							<h6 class="testimonial__name">Allison Brahms</h6>
-							<p class="testimonial__position">Marketing Director</p>
-							<div class="testimonial__rating">
-								<img
-									src="src/img/star-solid.svg"
-									alt="Star icon"
-									class="rating"
-								/>
-								<img
-									src="src/img/star-solid.svg"
-									alt="Star icon"
-									class="rating"
-								/>
-								<img
-									src="src/img/star-solid.svg"
-									alt="Star icon"
-									class="rating"
-								/>
+							<div class="author-info">
+								<p class="testimonial__name">Colt Samson</p>
+								<p class="testimonial__position">Marketing Director</p>
 							</div>
 						</div>
+						<span class="testimonial__rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="far fa-star"></i>
+						</span>
 					</div>
-				</div> -->
+				</div>
 			</div>
 		</section>
 
@@ -529,7 +455,7 @@
 			</p>
 
 			<form class="subscribe__form">
-				<input type="email" required />
+				<input class="input--subscribe" type="email" required />
 				<button class="btn--subscribe">Subscribe</button>
 			</form>
 		</section>
@@ -608,7 +534,10 @@
 			</div>
 
 			<div class="footer__copyright">
-				<p>&copy; Copyright by Artbuzz 2022. All rights reserved.</p>
+				<p>
+					&copy; Copyright by Artbuzz <span id="year"></span>. All rights
+					reserved.
+				</p>
 				<div class="footer__socmed">
 					<i class="fab fa-instagram"></i>
 					<i class="fab fa-facebook-f"></i>
@@ -619,16 +548,22 @@
 			</div>
 		</footer>
 
+		<div class="modal-subscribe hidden">
+			<button class="btn--close-subscribe">&times;</button>
+			<h3>Thank You!</h3>
+			<p>Thanks for subscribing to our newsletter!</p>
+		</div>
+
 		<div class="modal hidden">
 			<button class="btn--close-modal">&times;</button>
 			<h2 class="modal__header">Send Us a Message</h2>
 			<form class="modal__form">
 				<label>First Name</label>
-				<input type="text" />
+				<input type="text" required />
 				<label>Last Name</label>
-				<input type="text" />
+				<input type="text" required />
 				<label>Business Email</label>
-				<input type="email" />
+				<input type="email" required />
 				<label
 					>Please tell us about your project and the challenges you are
 					facing</label
