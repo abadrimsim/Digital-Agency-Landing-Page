@@ -541,7 +541,7 @@ p {
 
 .btn--subscribe {
 	font-size: clamp(0.9rem, 1vw + 0.15rem, 1.1rem);
-	padding: 0.8em;
+	padding: 1.25vh 0.8em;
 	border-radius: 4rem;
 	background-color: var(--color-primary);
 	border: none;
@@ -623,7 +623,7 @@ p {
 	box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
 	z-index: 1000;
 	transition: all 0.5s;
-	border-radius: min(2vw + 1em, 3rem);
+	border-radius: min(2vw + 1em, 2rem);
 }
 
 .modal-subscribe {
@@ -701,7 +701,7 @@ p {
 	cursor: pointer;
 	transition: all 0.5s;
 	font-family: inherit;
-	padding: 1em 10vw;
+	padding: 1em 5vw;
 	margin-top: 2vh;
 }
 
@@ -906,6 +906,10 @@ p {
 
 	.section__header {
 		width: 40%;
+	}
+
+	.modal {
+		width: min(30rem, 40vw + 1em);
 	}
 
 	.header {
