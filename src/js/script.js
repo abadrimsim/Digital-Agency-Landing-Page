@@ -11,7 +11,6 @@ const btnSubscribe = document.querySelector('.btn--subscribe');
 const inputSubscribe = document.querySelector('.input--subscribe');
 const modalSubscribe = document.querySelector('.modal-subscribe');
 const formSubscribe = document.querySelector('.subscribe__form');
-const imgTargets = document.querySelectorAll('img[data-src]');
 const btnExplore = document.querySelector('.btn--explore');
 const btnCloseSubscribe = document.querySelector('.btn--close-subscribe');
 const btnWatch = document.querySelector('.btn--watch');
@@ -118,29 +117,6 @@ btnExplore.addEventListener('click', function () {
 	const url = 'https://dribbble.com/';
 	window.open(url, '_blank').focus();
 });
-
-// Lazy Loading for Portfolio Images
-const loadImg = function (entries, observer) {
-	const [entry] = entries;
-	if (!entry.isIntersecting) return;
-
-	// Replace src with data-src
-	entry.target.src = entry.target.dataset.src;
-
-	// Remove class once the image has been fully loaded
-	entry.target.addEventListener('load', function () {
-		entry.target.classList.remove('lazy-img');
-	});
-
-	observer.unobserve(entry.target);
-};
-
-const imgObserver = new IntersectionObserver(loadImg, {
-	root: null,
-	threshold: 0,
-});
-
-imgTargets.forEach((img) => imgObserver.observe(img));
 
 // Testimonial Slider Functionality Using SllickJS
 $('.slider').slick({

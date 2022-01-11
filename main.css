@@ -81,10 +81,6 @@ p {
 	flex-direction: column;
 }
 
-.lazy-img {
-	filter: blur(15px);
-}
-
 /* ----- NAVIGATION ----- */
 .nav {
 	display: flex;
