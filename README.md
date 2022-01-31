@@ -1,6 +1,17 @@
-# Artbuzz Digital Agency Landing Page
-___
-A simple landing page for a fictional digital agency.
-Created using HTML, CSS, and JavaScript.
+# Artbuzz (Digital Agency Landing Page)
 
-LIVE LINK: https://artbuzz.netlify.app/
+![Logo](https://i.ibb.co/t22WYQL/artbuzz-prev.png)
+
+## Description
+
+A fully responsive landing page for a digital agency. Built with HTML, CSS, JavaScript and SlickJS plugin. Bundled using Parcel. 
+
+## Demo
+
+This website is deployed on Netlify, please see this [live demo](https://artbuzz.netlify.app/).
+
+
+
+
+
+
